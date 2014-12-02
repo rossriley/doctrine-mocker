@@ -93,6 +93,7 @@ class DoctrineMockBuilder extends \PHPUnit_Framework_TestCase
                     'executeQuery',
                     'executeUpdate',
                     'getDatabasePlatform',
+                    'getEventManager'
                 )
             )
             ->getMock();
@@ -108,6 +109,10 @@ class DoctrineMockBuilder extends \PHPUnit_Framework_TestCase
         $mock->expects($this->any())
             ->method('getDatabasePlatform')
             ->will($this->returnValue($this->getDatabasePlatformMock()));
+            
+        $mock->expects($this->any())
+            ->method('getEventManager')
+            ->will($this->returnValue($this->getMock('Doctrine\ORM\EventManager')));
 
         return $mock;
     }
