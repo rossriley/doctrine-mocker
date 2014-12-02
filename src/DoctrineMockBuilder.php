@@ -112,7 +112,7 @@ class DoctrineMockBuilder extends \PHPUnit_Framework_TestCase
             
         $mock->expects($this->any())
             ->method('getEventManager')
-            ->will($this->returnValue($this->getMock('Doctrine\ORM\EventManager')));
+            ->will($this->returnValue($this->getMock('Doctrine\Common\EventManager')));
 
         return $mock;
     }
