@@ -1,6 +1,6 @@
 <?php
 
-namespace Mocks;
+namespace Doctrine\Mocker;
 
 use Doctrine\DBAL\Driver\Statement;
 

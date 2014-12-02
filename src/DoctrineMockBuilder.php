@@ -1,6 +1,6 @@
 <?php
 
-namespace Mocks;
+namespace Doctrine\Mocker;
 
 /**
  * Mock Builder for Doctrine objects
