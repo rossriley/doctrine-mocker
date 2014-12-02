@@ -118,7 +118,7 @@ class DoctrineMockBuilder extends \PHPUnit_Framework_TestCase
     public function getStatementMock()
     {
         $mock = $this->getAbstractMock(
-            'Doctrine\DBAL\Driver\Statement', // In case you run PHPUnit <= 3.7, use 'Mocks\DoctrineDbalStatementInterface' instead.
+            'Doctrine\Mocker\DoctrineDbalStatementInterface',
             array(
                 'bindValue',
                 'execute',
