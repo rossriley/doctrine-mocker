@@ -1,6 +1,7 @@
 {
     "name": "rossriley/doctrine-mocker",
     "description": "Classes to help mock Doctrine ORM objects",
+    "keywords": ["doctrine","phpunit","mock"],
     "license": "MIT",
     "authors": [
         {
